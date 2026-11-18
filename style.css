@@ -114,3 +114,16 @@ body {
 .hidden {
     display: none;
 }
+.result-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f4f8f5;
+    border-left: 4px solid #2e6f40;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.hidden {
+    display: none;
+}
