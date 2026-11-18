@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Shipping Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <h1>FastShip</h1>
+        <p>Shipping Cost Calculator</p>
+    </header>
+
+    <main class="container">
+        <div class="calculator-card">
+            <h2>Calculator Your Shipping Cost</h2>
+
+            <form id="shippingform">
+                <div class="form-group">
+                    <label for="senderName">Sender Name</label>
+                    <input type="text" id="senderName" placeholder="Enter sender name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="receiverName">Receiver Name</label>
+                    <input type="number" id="receiverName" placeholder="Enter receiver name" required>
+                </div>
+
+                 <div class="form-group">
+                    <label for="parcelWeight">Parcel Weight (kg)</label>
+                    <input type="number" id="parcelWeight" placeholder="Enter pracel weight" min="0.1" step="0.1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="deliveryDistance">Delivery Distance (km) </label>
+                    <input type="number" id="deliveryDistance" placeholder="Enter distance" min="1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="shippingMethod">Shipping Method</label>
+                    <select id="shippingMethod">
+                        <option value="standard">Standard Delivery</option>
+                        <option value="express">Express Delivery</option>
+                         <option value="overnight">Overnight Delivery</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-calculate">Calculate Shipping</button>
+                 <button type="button" id="resetBtn" class="btn btn-reset">Reset</button>
+            </form>
+
+             <div id="resultBox" class="result-box hidden"></div>
+            </form>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
